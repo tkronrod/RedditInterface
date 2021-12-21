@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "a642d36e-5cbe-4a0a-82ea-23d2f6f3eea1",
+		"name": "RedditTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SubredditGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "18.223.120.103/reddit/aww",
+					"host": [
+						"18",
+						"223",
+						"120",
+						"103"
+					],
+					"path": [
+						"reddit",
+						"aww"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
