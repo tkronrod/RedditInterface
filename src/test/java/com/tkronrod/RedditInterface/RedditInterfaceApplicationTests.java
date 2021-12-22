@@ -76,5 +76,12 @@ class RedditInterfaceApplicationTests {
 		
 		assertTrue(json.length() == 0);
 	}
+	
+	@Test
+	void random() {
+		JSONObject json = reddit.getSubredditTop("fjkdlsfjdsalkfjdsal");
+		
+		assertTrue(json.length() == 0);
+	}
 
 }

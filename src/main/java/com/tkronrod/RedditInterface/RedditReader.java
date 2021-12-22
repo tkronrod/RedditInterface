@@ -128,6 +128,11 @@ public class RedditReader {
 		catch(ApiException exc) {
 			return new JSONObject();
 		}
+		//some subreddits don't get caught as non-existent but return a 
+		//null pointer exception
+		catch(NullPointerException exce) {
+			return new JSONObject();
+		}
 		
 		//if code gets here then the subreddit should exist and be parseable by the code
 		int numArticles = 100;
