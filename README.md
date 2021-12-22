@@ -20,5 +20,5 @@ The app runs on Java 11 and uses the SpringBoot framework for application bootst
 ## Overview
 
 The app runs on a SpringBoot instance that listens to incoming HTTP requests (on port 80), and once it receives one it passes it along to the RedditReader class which sends a GET request to the Reddit API for the top posts of the requested subreddit. It then gathers the usesful information on the top 100 articles in that subreddit and returns them in a list in a JSON. 
-Since Springboot starts a separate thread for each incoming request, the app can accept and process multiple requests at the same time. 
+Since SpringBoot starts a separate thread for each incoming request, the app can accept and process multiple requests at the same time. 
 There is an instance of the app running on AWS EC2, the directions for which are above in the *Remote Access* section. 
